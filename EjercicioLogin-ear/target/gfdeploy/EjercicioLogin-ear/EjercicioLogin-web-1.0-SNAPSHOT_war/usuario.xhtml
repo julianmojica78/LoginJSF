@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <meta charset="utf-8"/>
+        <meta name="viewport"    content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content=""/>
+        <meta name="author"      content="Sergey Pozhilov (GetTemplate.com)"/>
+
+        <title>Usuario</title>
+        
+        <link rel="shortcut icon" href="resources/assets/images/gt_favicon.png"/>
+
+        <link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
+
+        <link href="resources/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="resources/assets/css/font-awesome.min.css"/>
+
+        <!-- Custom styles for our template -->
+        <link rel="stylesheet" href="resources/assets/css/bootstrap-theme.css" media="screen" />
+        <link rel="stylesheet" href="resources/assets/css/main.css"/>
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="assets/js/html5shiv.js"></script>
+        <script src="assets/js/respond.min.js"></script>
+        <![endif]-->
+    </h:head>
+
+    <h:body >
+        <!-- Fixed navbar -->
+
+        <div class="navbar navbar-inverse navbar-fixed-top headroom" >
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- Button for smallest screens -->
+
+                    <a class="navbar-brand" ><img src="resources/assets/images/logo.png" alt="Progressus HTML5 template"/></a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav pull-right">
+                        <h:form>
+                            <p:commandButton class="btn btn-action btn-lg"  value="Cerrar sesion" action="#{beanUsuario.cerrarSesion()}"></p:commandButton>
+                        </h:form>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </div> 
+        <!-- /.navbar -->
+
+        <!-- Header -->
+        <header id="head">
+            <div class="container">
+                <div class="row">
+                    <h:form>
+                        <h1 class="lead"><p:outputLabel value="Bienvenido Usuario #{beanUsuario.nombre()}"></p:outputLabel> </h1>
+                    </h:form>
+                    
+                </div>
+            </div>
+        </header>
+
+        <!-- /Header -->
+        <h:form>
+            <!-- Intro -->
+            <div class="container text-center">
+                <br/> <br/>
+                <h2 class="thin"><p:outputLabel >Usted ha accedido como Usuario </p:outputLabel></h2>
+
+             
+
+            </div>
+
+        </h:form>
+        <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+        <script src="resources/assets/js/headroom.min.js"></script>
+        <script src="resources/assets/js/jQuery.headroom.min.js"></script>
+        <script src="resources/assets/js/template.js"></script>
+    </h:body>
+</html>
+

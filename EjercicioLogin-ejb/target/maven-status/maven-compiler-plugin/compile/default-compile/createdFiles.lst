@@ -1,0 +1,6 @@
+Ejb\PersonaFacade.class
+Udec\NewSessionBean.class
+Entity\Persona.class
+Ejb\PersonaFacadeLocal.class
+Entity\Persona_.class
+Ejb\AbstractFacade.class

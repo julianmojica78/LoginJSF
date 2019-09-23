@@ -1,0 +1,4 @@
+Controller\BeanUsuario.class
+Controller\BeanAdministrador.class
+Controller\Operacion.class
+Modelo\Usuario.class
